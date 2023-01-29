@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sell</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <header class="text-gray-600 body-font headStyle">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <img src="farmezylogo.jpg" width="60" height="60" alt="">
+        <span class="ml-3 text-xl"></span>
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a class="navbar-brand" href="index.html">HOME</a>
+
+      </nav>
+      <a href="signup.html"><button style="margin-right:10px" class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">SIGN UP</a>
+
+      <a href="login.html"><button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">LOG IN </a>
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+    <div style="padding: 50px;">
+        <form>
+            <fieldset >
+              <legend>Item to be Listed</legend>
+              <div class="mb-3 w-50 items">
+                <label for="item-name" class="form-label">Item Name</label>
+                <input type="text" id="item-name" class="form-control" placeholder="Item Name">
+              </div>
+              <div class="mb-3 w-50">
+                <label for="quantity" class="form-label">Quantity</label>
+                <input type="text" id="quantity" class="form-control" placeholder="Quantity">
+                <label for="description" style="margin-top: 15px;margin-bottom: -10px;" class="form-label">Description</label>
+
+              </div>
+              <div class="input-group">
+                <div>
+                <textarea id="description" class="form-control" placeholder="About the product..." aria-label="With textarea" ></textarea>
+                </div>
+              </div>
+              <form action="/action_page.php">
+  <input type="file" id="myFile" name="filename" style="margin-top:15px;">
+</form>
+              <div class="mb-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck">
+                  <label class="form-check-label" for="disabledFieldsetCheck">
+                  Accept terms and conditions
+                      </label>
+                </div>
+              </div>
+              <button style="background-color:blue;text-color:white" class="btn btn-primary sub" type="submit">Submit</button>
+            </fieldset>
+          </form>
+    </div>
+    <script src="item.js"></script>
+</body>
+</html>
